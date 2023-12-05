@@ -16,7 +16,7 @@ form.addEventListener('submit', function(event){
     }
 
     else{
-        const bmi = (w / ((h*w) / 10000)).toFixed(2);
+        const bmi = ((w / (h*h) )* 10000).toFixed(2);
         result.innerHTML =`<span>CALCULATED BMI:${bmi}</span>`
     }
     
